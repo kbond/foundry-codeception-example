@@ -138,6 +138,9 @@
     "egulias/email-validator": {
         "version": "2.1.22"
     },
+    "fzaninotto/faker": {
+        "version": "v1.9.1"
+    },
     "guzzlehttp/guzzle": {
         "version": "7.2.0"
     },
@@ -683,5 +686,8 @@
     },
     "webmozart/assert": {
         "version": "1.9.1"
+    },
+    "zenstruck/foundry": {
+        "version": "1.x-dev"
     }
 }

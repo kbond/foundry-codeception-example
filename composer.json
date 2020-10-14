@@ -52,7 +52,8 @@
         "symfony/phpunit-bridge": "^5.1",
         "symfony/stopwatch": "^5.1",
         "symfony/var-dumper": "^5.1",
-        "symfony/web-profiler-bundle": "^5.1"
+        "symfony/web-profiler-bundle": "^5.1",
+        "zenstruck/foundry": "@dev"
     },
     "config": {
         "optimize-autoloader": true,
@@ -71,6 +72,12 @@
             "App\\Tests\\": "tests/"
         }
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../foundry"
+        }
+    ],
     "replace": {
         "paragonie/random_compat": "2.*",
         "symfony/polyfill-ctype": "*",

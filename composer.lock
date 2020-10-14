@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "041bc2605cd56b74abf56035dab526cf",
+    "content-hash": "51a060febadafd246f17ecf47b5b5b62",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -7938,6 +7938,56 @@
             "time": "2020-07-03T15:54:43+00:00"
         },
         {
+            "name": "fzaninotto/faker",
+            "version": "v1.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fzaninotto/Faker.git",
+                "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/fc10d778e4b84d5bd315dad194661e091d307c6f",
+                "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.3 || ^7.0"
+            },
+            "require-dev": {
+                "ext-intl": "*",
+                "phpunit/phpunit": "^4.8.35 || ^5.7",
+                "squizlabs/php_codesniffer": "^2.9.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Faker\\": "src/Faker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "time": "2019-12-12T13:22:17+00:00"
+        },
+        {
             "name": "guzzlehttp/guzzle",
             "version": "7.2.0",
             "source": {
@@ -10450,11 +10500,80 @@
                 }
             ],
             "time": "2020-07-12T23:59:07+00:00"
+        },
+        {
+            "name": "zenstruck/foundry",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../foundry",
+                "reference": "ecf674ac04579806fd8a2e664372c816c05d92fd"
+            },
+            "require": {
+                "doctrine/persistence": "^1.3.3|^2.0",
+                "fzaninotto/faker": "^1.5",
+                "php": ">=7.2.5",
+                "symfony/property-access": "^3.4|^4.4|^5.0"
+            },
+            "require-dev": {
+                "dama/doctrine-test-bundle": "^6.0",
+                "doctrine/doctrine-bundle": "^2.0",
+                "doctrine/orm": "^2.7",
+                "matthiasnoback/symfony-dependency-injection-test": "^4.1",
+                "phpunit/phpunit": "^8.5",
+                "symfony/framework-bundle": "^4.4|^5.0",
+                "symfony/maker-bundle": "^1.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zenstruck\\Foundry\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Zenstruck\\Foundry\\Tests\\": "tests/",
+                    "App\\": "tests/Fixtures/tmp/src",
+                    "App\\Tests\\": "tests/Fixtures/tmp/tests"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Bond",
+                    "email": "kevinbond@gmail.com"
+                }
+            ],
+            "description": "A model factory library for creating expressive, auto-completable, on-demand dev/test fixtures with Symfony and Doctrine.",
+            "homepage": "https://github.com/zenstruck/foundry",
+            "keywords": [
+                "doctrine",
+                "factory",
+                "faker",
+                "fixture",
+                "symfony",
+                "test"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "zenstruck/foundry": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
