@@ -6,6 +6,7 @@
 # Remove this suite if you don't use frameworks
 
 actor: FunctionalTester
+bootstrap: bootstrap.php
 modules:
     enabled:
         - Symfony:
@@ -15,3 +16,4 @@ modules:
             depends: Symfony
             cleanup: true
         - \App\Tests\Helper\Functional
+        - \App\Tests\Helper\Foundry
